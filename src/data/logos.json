@@ -1,0 +1,200 @@
+[
+  {
+    "name": "AT&T",
+    "logo": "/logos/AT&T.png",
+    "lat": 33.8579406,
+    "lon": -99.385416
+  },
+  {
+    "name": "Dell",
+    "logo": "/logos/dell.png",
+    "lat": 31.4208097,
+    "lon": -103.4612239
+  },
+  {
+    "name": "ExxonMobil",
+    "logo": "/logos/exxonmobil.png",
+    "lat": 28.9587654,
+    "lon": -98.7440507
+  },
+  {
+    "name": "Phillps 66",
+    "logo": "/logos/Phillips.png",
+    "lat": 30.6581628,
+    "lon": -100.285121
+  },
+  {
+    "name": "Oracle",
+    "logo": "/logos/oracle.png",
+    "lat": 31.2587654,
+    "lon": -95.2440507
+  },
+  {
+    "name": "ConocoPhillips",
+    "logo": "/logos/conocophillips.png",
+    "lat": 32.5020242,
+    "lon": -98.4002283
+  },
+  {
+    "name": "CocoCola",
+    "logo": "/logos/cococola.png",
+    "lat": 32.541,
+    "lon": -82.5677
+  },
+  {
+    "name": "Microsoft",
+    "logo": "/logos/microsoft.png",
+    "lat": 47.0079,
+    "lon": -122.9007
+  },
+  {
+    "name": "Adobe",
+    "logo": "/logos/adobe.png",
+    "lat": 41.0734427,
+    "lon": -122.3399846
+  },
+  {
+    "name": "logo",
+    "logo": "/logos/ingrammicro.png",
+    "lat": 40.0734427,
+    "lon": -123.3399846
+  },
+  {
+    "name": "logo",
+    "logo": "/logos/google.png",
+    "lat": 37.5734427,
+    "lon": -121.3399846
+  },
+  {
+    "name": "logo",
+    "logo": "/logos/yahoo.png",
+    "lat": 38.5734427,
+    "lon": -120.8399846
+  },
+  {
+    "name": "logo",
+    "logo": "/logos/cisco systems.png",
+    "lat": 37.0734427,
+    "lon": -118.8399846
+  },
+  {
+    "name": "logo",
+    "logo": "/logos/hollywood.png",
+    "lat": 36.7734427,
+    "lon": -121.5399846
+  },
+  {
+    "name": "logo",
+    "logo": "/logos/csc.png",
+    "lat": 36.2734427,
+    "lon": -119.0399846
+  },
+  {
+    "name": "logo",
+    "logo": "/logos/intel.png",
+    "lat": 35.2734427,
+    "lon": -120.5399846
+  },
+  {
+    "name": "logo",
+    "logo": "/logos/hp.png",
+    "lat": 35.0734427,
+    "lon": -116.5399846
+  },
+  {
+    "name": "logo",
+    "logo": "/logos/oracle.png",
+    "lat": 35.2734427,
+    "lon": -117.9399846
+  },
+  {
+    "name": "logo",
+    "logo": "/logos/sprint.png",
+    "lat": 38.4872,
+    "lon": -100.3301
+  },
+  {
+    "name": "logo",
+    "logo": "/logos/target.png",
+    "lat": 48.5867,
+    "lon": -96.4005
+  },
+  {
+    "name": "logo",
+    "logo": "/logos/3m.png",
+    "lat": 47.9867,
+    "lon": -94.1005
+  },
+  {
+    "name": "logo",
+    "logo": "/logos/bestbuy.png",
+    "lat": 44.5867,
+    "lon": -96.1005
+  },
+  {
+    "name": "logo",
+    "logo": "/logos/walmart.png",
+    "lat": 34.5722,
+    "lon": -94.0719
+  },
+  {
+    "name": "logo",
+    "logo": "/logos/tyson.png",
+    "lat": 35.3722,
+    "lon": -94.2719
+  },
+  {
+    "name": "logo",
+    "logo": "/logos/fedex.png",
+    "lat": 35.8087542,
+    "lon": -88.0400677
+  },
+  {
+    "name": "logo",
+    "logo": "/logos/bankofamerica.png",
+    "lat": 35.5571,
+    "lon": -79.8031
+  },
+  {
+    "name": "logo",
+    "logo": "/logos/libertmutual.png",
+    "lat": 37.8009,
+    "lon": -86.8433
+  },
+  {
+    "name": "logo",
+    "logo": "/logos/pandg.png",
+    "lat": 40.5012,
+    "lon": -81.8288
+  },
+  {
+    "name": "logo",
+    "logo": "/logos/ibm.png",
+    "lat": 44.3981,
+    "lon": -76.0474
+  },
+  {
+    "name": "logo",
+    "logo": "/logos/citi.png",
+    "lat": 44.8981,
+    "lon": -74.5474
+  },
+  {
+    "name": "logo",
+    "logo": "/logos/jpmorgan.png",
+    "lat": 42.6981,
+    "lon": -75.3474
+  },
+  {
+    "name": "logo",
+    "logo": "/logos/comcast.png",
+    "lat": 41.7732,
+    "lon": -76.2867
+  },
+  {
+    "name": "logo",
+    "logo": "/logos/amerisourcebergen.png",
+    "lat": 41.2732,
+    "lon": -79.3867
+  }
+]

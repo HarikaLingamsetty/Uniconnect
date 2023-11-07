@@ -1,0 +1,200 @@
+import React, { useState } from "react";
+import { geoCentroid } from "d3-geo";
+import "./style.css";
+import {
+  ComposableMap,
+  Geographies,
+  Geography,
+  Marker,
+  Annotation,
+  ZoomableGroup,
+} from "react-simple-maps";
+import CustomModal from "./components/CustomModal";
+
+import allStates from "./data/allstates.json";
+import universities from "./data/universities.json";
+import text from "./data/text.json";
+import cities from "./data/cities.json";
+import logos from "./data/logos.json";
+import icons from "./data/icons.json";
+
+const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
+
+const offsets = {
+  VT: [50, -8],
+  NH: [34, 2],
+  MA: [30, -1],
+  RI: [28, 2],
+  CT: [35, 10],
+  NJ: [34, 1],
+  DE: [33, 0],
+  MD: [47, 10],
+  DC: [49, 21],
+};
+
+const MapChart = () => {
+  const [content, setContent] = useState({});
+  const [hoveredState, setHoveredState] = useState(null);
+  const [modalShow, setModalShow] = React.useState(false);
+
+  const open = (content) => {
+    setContent(content);
+    setModalShow(true);
+  };
+
+  const close = () => {
+    setModalShow(false);
+    setContent({});
+  };
+
+  const handleStateHover = (geo) => {
+    setHoveredState(geo.id);
+  };
+
+  const handleStateHoverEnd = () => {
+    setHoveredState(null);
+  };
+
+  return (
+    <div className={`map-container ${modalShow ? "blurred" : ""}`}>
+      <ComposableMap
+        projection="geoAlbersUsa"
+        projectionConfig={{
+          rotate: [58, 20, 3],
+          scale: 1250,
+        }}
+      >
+        <ZoomableGroup>
+          <Geographies geography={geoUrl}>
+            {({ geographies }) => (
+              <>
+                {geographies.map((geo) => (
+                  <Geography
+                    style={{
+                      default: { outline: "none" },
+                      hover: { outline: "none" },
+                      pressed: { outline: "none" },
+                    }}
+                    key={geo.rsmKey}
+                    geography={geo}
+                    className={`geography ${
+                      geo.id === hoveredState ? "hovered" : ""
+                    }`}
+                    onMouseEnter={() => handleStateHover(geo)}
+                    onMouseLeave={handleStateHoverEnd}
+                  />
+                ))}
+                {geographies.map((geo) => {
+                  const centroid = geoCentroid(geo);
+                  const cur = allStates.find((s) => s.val === geo.id);
+                  return (
+                    <g key={geo.rsmKey + "-name"}>
+                      {cur &&
+                        centroid[0] > -160 &&
+                        centroid[0] < -67 &&
+                        (Object.keys(offsets).indexOf(cur.id) === -1 ? (
+                          <>
+                            <Marker coordinates={centroid}>
+                              <text y="2" fontSize={12} textAnchor="middle">
+                                {cur.id}
+                              </text>
+                            </Marker>
+                          </>
+                        ) : (
+                          <Annotation
+                            subject={centroid}
+                            dx={offsets[cur.id][0]}
+                            dy={offsets[cur.id][1]}
+                          >
+                            <text
+                              x={4}
+                              fontSize={12}
+                              alignmentBaseline="middle"
+                            >
+                              {cur.id}
+                            </text>
+                          </Annotation>
+                        ))}
+                    </g>
+                  );
+                })}
+              </>
+            )}
+          </Geographies>
+          {universities.map((item, index) => (
+            <Marker key={index} coordinates={[item.lon, item.lat]}>
+              <text
+                textAnchor="middle"
+                style={{ fill: item.colour }}
+                fontWeight={530}
+                className="marker"
+                cursor="pointer"
+                onClick={() => open(item)}
+              >
+                {item.name.split("\n").map((line, idx) => (
+                  <tspan x={0} dy={idx === 0 ? 0 : 5} key={idx}>
+                    {line}
+                  </tspan>
+                ))}
+              </text>
+            </Marker>
+          ))}
+          {cities.map((item, index) => (
+            <Marker key={index} coordinates={[item.lon, item.lat]}>
+              <text
+                textAnchor="middle"
+                style={{ fill: "black" }}
+                fontFamily=""
+                fontWeight={700}
+                fontSize={5}
+                className="marker"
+              >
+                {item.name}
+              </text>
+            </Marker>
+          ))}
+          {text.map((item, index) => (
+            <Marker key={index} coordinates={[item.lon, item.lat]}>
+              <text
+                textAnchor="middle"
+                style={{ fill: "black" }}
+                fontWeight={500}
+                fontSize={5}
+                className="marker"
+              >
+                {item.name.split("\n").map((line, idx) => (
+                  <tspan x={0} dy={idx === 0 ? 0 : 5} key={idx}>
+                    {line}
+                  </tspan>
+                ))}
+              </text>
+            </Marker>
+          ))}
+          {logos.map((item, index) => (
+            <Marker key={index} coordinates={[item.lon, item.lat]}>
+              <image
+                href={process.env.PUBLIC_URL + item.logo}
+                width="15"
+                height="15"
+                className="marker"
+              />
+            </Marker>
+          ))}
+          {icons.map((item, index) => (
+            <Marker key={index} coordinates={[item.lon, item.lat]}>
+              <image
+                href={process.env.PUBLIC_URL + item.logo}
+                width="15"
+                height="15"
+                className="marker"
+              />
+            </Marker>
+          ))}
+        </ZoomableGroup>
+        <CustomModal show={modalShow} onHide={close} content={content} />
+      </ComposableMap>
+    </div>
+  );
+};
+
+export default MapChart;
