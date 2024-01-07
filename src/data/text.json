@@ -1,7 +1,7 @@
 [
   {
     "name": "(The Evergreen State)",
-    "lat": 47.8809,
+    "lat": 47.6809,
     "lon": -120.0348
   },
   {
@@ -11,7 +11,7 @@
   },
   {
     "name": "(The Golden State)",
-    "lat": 37.657807,
+    "lat": 37.457807,
     "lon": -119.4200025
   },
   {
@@ -21,8 +21,8 @@
   },
   {
     "name": "(Gem of the Mountains)",
-    "lat": 44.9050,
-    "lon": -114.9023
+    "lat": 44.6050,
+    "lon": -114.4023
   },
   {
     "name": "(Beehive State)",
@@ -31,8 +31,8 @@
   },
   {
     "name": "(The Grand Canyon State)",
-    "lat": 34.7284,
-    "lon": -112.0740
+    "lat": 34.5884,
+    "lon": -111.0740
   },
   {
     "name": "(Land of Enchantment)",
@@ -42,7 +42,7 @@
   {
     "name": "(Centennial State & Colorful Colorado)",
     "lat": 38.7339,
-    "lon": -107.5214
+    "lon": -107.6214
   },
   {
     "name": "(Badger State)",
@@ -56,7 +56,7 @@
   },
   {
     "name": "(Peace Garden State)",
-    "lat": 47.4083,
+    "lat": 47.6083,
     "lon": -102.0837
   },
   {
@@ -71,13 +71,13 @@
   },
   {
     "name": "(Sunflower State)",
-    "lat": 38.9072,
-    "lon": -99.1801
+    "lat": 38.6772,
+    "lon": -97.6801
   },
   {
     "name": "(The Sooner State)",
-    "lat": 35.7076,
-    "lon": -96.0964
+    "lat": 35.7576,
+    "lon": -97.0964
   },
   {
     "name": "(Lone Star State)",
@@ -95,9 +95,9 @@
     "lon": -91.8896
   },
   {
-    "name": "(Show Me\nState)",
-    "lat": 38.0767,
-    "lon": -92.8735
+    "name": "(Show Me State)",
+    "lat": 38.5067,
+    "lon": -92.0735
   },
   {
     "name": "(Hawkeye State)",
@@ -106,13 +106,13 @@
   },
   {
     "name": "(Land of 10,000 Lakes)",
-    "lat": 46.7867,
-    "lon": -95.1005
+    "lat": 46.4867,
+    "lon": -93.5005
   },
   {
     "name": "(Mountain State)",
-    "lat": 45.1031,
-    "lon": -90.8012
+    "lat": 44.31031,
+    "lon": -90.5512
   },
   {
     "name": "(Praire State)",
@@ -121,7 +121,7 @@
   },
   {
     "name": "(Magnolia State)",
-    "lat": 33.1988,
+    "lat": 32.8988,
     "lon": -89.1848
   },
   {
@@ -131,7 +131,7 @@
   },
   {
     "name": "(Sunshine State)",
-    "lat":29.0582559,
+    "lat":28.8082559,
     "lon": -82.4807329
   },
   {
@@ -151,8 +151,8 @@
   },
   {
     "name": "(The Volunteer State)",
-    "lat": 35.5027,
-    "lon": -86.4816
+    "lat": 35.4727,
+    "lon": -86.5816
   },
   {
     "name": "(Old Dominion State)",
@@ -166,12 +166,12 @@
   },
   {
     "name": "(Hoosier State)",
-    "lat": 39.78484,
+    "lat": 39.95484,
     "lon": -85.3981
   },
   {
     "name": "(Great Lake State)",
-    "lat": 44.7325,
+    "lat": 44.3725,
     "lon": -84.5555
   },
   {
@@ -198,5 +198,45 @@
     "name": "(Pine Tree State)",
     "lat": 45.8106,
     "lon": -69.2808
+  },
+  {
+    "name": "(Green Mountain State)",
+    "lat": 47.8581,
+    "lon": -70.5974
+  },
+  {
+    "name": "(The Granite State)",
+    "lat": 45.1081,
+    "lon": -63.0974
+  },
+  {
+    "name": "(Old Colony State)",
+    "lat": 42.8381,
+    "lon": -63.8974
+  },
+  {
+    "name": "(Ocean State)",
+    "lat": 39.5381,
+    "lon": -62.8974
+  },
+  {
+    "name": "(Constitution State)",
+    "lat": 40.3881,
+    "lon": -68.3974
+  },
+  {
+    "name": "(Garden State)",
+    "lat": 37.7981,
+    "lon": -64.1074
+  },
+  {
+    "name": "(The First State & The Diamond State)",
+    "lat": 38.7981,
+    "lon": -70.8974
+  },
+  {
+    "name": "(Old Line State)",
+    "lat": 36.4481,
+    "lon": -68.3974
   }
 ]

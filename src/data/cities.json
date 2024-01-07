@@ -191,8 +191,8 @@
   },
   {
     "name": "Clayton",
-    "lat": 35.4507,
-    "lon": -78.4603
+    "lat": 35.4107,
+    "lon": -78.1603
   },
   {
     "name": "Greensboro",
@@ -241,7 +241,7 @@
   },
   {
     "name": "Syracuse",
-    "lat": 42.6981,
+    "lat": 42.6281,
     "lon": -76.1474
   },
   {
@@ -296,7 +296,7 @@
   },
   {
     "name": "Ann Arbor",
-    "lat": 42.0008,
+    "lat": 41.9008,
     "lon": -83.7430
   },
   {
@@ -361,8 +361,8 @@
   },
   {
     "name": "Saint Paul",
-    "lat": 45.3037,
-    "lon": -93.0900
+    "lat": 45.3237,
+    "lon": -93.2200
   },
   {
     "name": "Minneapolis",
@@ -372,7 +372,7 @@
   {
     "name": "Bloomington",
     "lat": 44.7408,
-    "lon": -93.2983
+    "lon": -93.3983
   },
   {
     "name": "Rochester",
@@ -416,8 +416,8 @@
   },
   {
     "name": "Fayetteville",
-    "lat": 35.8722,
-    "lon": -94.0719
+    "lat": 35.8322,
+    "lon": -94.0319
   },
   {
     "name": "Jonesboro",
@@ -456,7 +456,7 @@
   },
   {
     "name": "Oklahoma City*",
-    "lat": 35.2076,
+    "lat": 35.1576,
     "lon": -97.5164
   },
   {
@@ -521,8 +521,8 @@
   },
   {
     "name": "Seattle",
-    "lat": 47.8062,
-    "lon": -121.9321
+    "lat": 48.0062,
+    "lon": -121.8321
   },
   {
     "name": "Olympia*",
@@ -531,12 +531,12 @@
   },
   {
     "name": "Vancouver",
-    "lat": 45.7987,
-    "lon": -122.6615
+    "lat": 45.8587,
+    "lon": -122.2615
   },
   {
     "name": "Everett",
-    "lat": 48.10987,
+    "lat": 48.3987,
     "lon": -121.8021
   },
   {
@@ -672,7 +672,7 @@
   {
     "name": "Omaha",
     "lat": 41.5065,
-    "lon": -96.4045
+    "lon": -96.5045
   },
   {
     "name": "Bellevue",
@@ -691,12 +691,12 @@
   },
   {
     "name": "Taylorsville",
-    "lat": 40.4677,
+    "lat": 40.3677,
     "lon": -111.9388
   },
   {
     "name": "West Valley City",
-    "lat": 40.5884,
+    "lat": 40.5284,
     "lon": -112.0118
   },
   {
@@ -711,7 +711,7 @@
   },
   {
     "name": "Reno",
-    "lat": 39.7096,
+    "lat": 39.7596,
     "lon": -119.7138
   },
   {
@@ -721,7 +721,7 @@
   },
   {
     "name": "Las Vegas",
-    "lat": 36.2699,
+    "lat": 36.3499,
     "lon": -115.1398
   },
   {
@@ -828,5 +828,145 @@
     "name": "Las Cruces",
     "lat": 32.3199,
     "lon": -106.7637
+  },
+  {
+    "name": "Burlington",
+    "lat": 48.0081,
+    "lon": -72.7974
+  },
+  {
+    "name": "Essex",
+    "lat": 47.8081,
+    "lon": -72.7974
+  },
+  {
+    "name": "Rutland",
+    "lat": 47.6081,
+    "lon": -72.7974
+  },
+  {
+    "name": "Montpelier*",
+    "lat": 47.4081,
+    "lon": -72.7974
+  },
+  {
+    "name": "Albany",
+    "lat": 44.8581,
+    "lon": -63.0974
+  },
+  {
+    "name": "Berlin",
+    "lat": 44.6981,
+    "lon": -63.1974
+  },
+  {
+    "name": "Claremont",
+    "lat": 44.5981,
+    "lon": -63.2974
+  },
+  {
+    "name": "Concord",
+    "lat": 44.4481,
+    "lon": -63.3274
+  },
+  {
+    "name": "Franklin",
+    "lat": 44.2781,
+    "lon": -63.3974
+  },
+  {
+    "name": "Manchester",
+    "lat": 44.1581,
+    "lon": -63.4974
+  },
+  {
+    "name": "Rochester",
+    "lat": 44.0081,
+    "lon": -63.5774
+  },
+  {
+    "name": "Boston",
+    "lat": 42.6381,
+    "lon": -63.9274
+  },
+  {
+    "name": "Worcester",
+    "lat": 42.4781,
+    "lon": -63.9974
+  },
+  {
+    "name": "Providence*",
+    "lat": 39.3081,
+    "lon": -62.8974
+  },
+  {
+    "name": "Warwick",
+    "lat": 39.1281,
+    "lon": -62.9874
+  },
+  {
+    "name": "Bridgeport",
+    "lat": 40.1881,
+    "lon": -68.3974
+  },
+  {
+    "name": "New Haven",
+    "lat": 40.0201,
+    "lon": -68.4274
+  },
+  {
+    "name": "Stamford",
+    "lat": 39.8581,
+    "lon": -68.4974
+  },
+  {
+    "name": "Jersey City",
+    "lat": 37.5981,
+    "lon": -64.1074
+  },
+  {
+    "name": "Trenton",
+    "lat": 37.4481,
+    "lon": -64.2074
+  },
+  {
+    "name": "Camden",
+    "lat": 37.2881,
+    "lon": -64.2674
+  },
+  {
+    "name": "Clifton",
+    "lat": 37.1181,
+    "lon": -64.3074
+  },
+  {
+    "name": "Delaware City",
+    "lat": 38.6081,
+    "lon": -70.8974
+  },
+  {
+    "name": "Newark",
+    "lat": 38.4581,
+    "lon": -70.8974
+  },
+  {
+    "name": "Baltimore",
+    "lat": 36.2781,
+    "lon": -68.3974
+  },
+  {
+    "name": "Annapolis",
+    "lat": 36.1581,
+    "lon": -68.4574
+  },
+  {
+    "name": "Cambridge",
+    "lat": 36.0081,
+    "lon": -68.4974
+  },
+  {
+    "name": "Bethesda",
+    "lat": 35.8681,
+    "lon": -68.5574
   }
 ]

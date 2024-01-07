@@ -21,15 +21,15 @@ import icons from "./data/icons.json";
 const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 
 const offsets = {
-  VT: [50, -8],
-  NH: [34, 2],
-  MA: [30, -1],
-  RI: [28, 2],
-  CT: [35, 10],
-  NJ: [34, 1],
-  DE: [33, 0],
-  MD: [47, 10],
-  DC: [49, 21],
+  VT: [-10, -90],
+  NH: [100, -70],
+  MA: [100, -50],
+  RI: [130, 2],
+  CT: [60, 7],
+  NJ: [170, 1],
+  DE: [50, -15],
+  MD: [140, 20],
+  DC: [49, 50],
 };
 
 const MapChart = () => {
@@ -95,8 +95,8 @@ const MapChart = () => {
                         (Object.keys(offsets).indexOf(cur.id) === -1 ? (
                           <>
                             <Marker coordinates={centroid}>
-                              <text y="2" fontSize={12} textAnchor="middle">
-                                {cur.id}
+                              <text y="2" fontSize={5} fontWeight={700} textAnchor="middle">
+                                {cur.name}
                               </text>
                             </Marker>
                           </>
@@ -107,11 +107,13 @@ const MapChart = () => {
                             dy={offsets[cur.id][1]}
                           >
                             <text
-                              x={4}
-                              fontSize={12}
+                              x={0}
+                              y={-5}
+                              fontSize={5}
+                              fontWeight={700}
                               alignmentBaseline="middle"
                             >
-                              {cur.id}
+                              {cur.name}
                             </text>
                           </Annotation>
                         ))}

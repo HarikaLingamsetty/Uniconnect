@@ -45,7 +45,7 @@ const CustomModal = (props) => {
         </Modal.Body>
         <Modal.Footer className="modal-footer">
           <div>
-          <p><a href="https://www.example.com">link</a></p>
+          <p><a href={props.content.link}>link</a></p>
           </div>
           {/* <Button onClick={props.onHide}>Close</Button> */}
         </Modal.Footer>
