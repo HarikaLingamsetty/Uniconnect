@@ -9,7 +9,6 @@ import {
   Annotation,
   ZoomableGroup,
 } from "react-simple-maps";
-import CustomModal from "./components/CustomModal";
 
 import allStates from "./data/allstates.json";
 import universities from "./data/universities.json";
@@ -33,19 +32,7 @@ const offsets = {
 };
 
 const MapChart = () => {
-  const [content, setContent] = useState({});
   const [hoveredState, setHoveredState] = useState(null);
-  const [modalShow, setModalShow] = React.useState(false);
-
-  const open = (content) => {
-    setContent(content);
-    setModalShow(true);
-  };
-
-  const close = () => {
-    setModalShow(false);
-    setContent({});
-  };
 
   const handleStateHover = (geo) => {
     setHoveredState(geo.id);
@@ -56,7 +43,7 @@ const MapChart = () => {
   };
 
   return (
-    <div className={`map-container ${modalShow ? "blurred" : ""}`}>
+    <div className={`map-container`}>
       <ComposableMap
         projection="geoAlbersUsa"
         projectionConfig={{
@@ -95,7 +82,12 @@ const MapChart = () => {
                         (Object.keys(offsets).indexOf(cur.id) === -1 ? (
                           <>
                             <Marker coordinates={centroid}>
-                              <text y="2" fontSize={5} fontWeight={700} textAnchor="middle">
+                              <text
+                                y="2"
+                                fontSize={5}
+                                fontWeight={700}
+                                textAnchor="middle"
+                              >
                                 {cur.name}
                               </text>
                             </Marker>
@@ -131,7 +123,9 @@ const MapChart = () => {
                 fontWeight={530}
                 className="marker"
                 cursor="pointer"
-                onClick={() => open(item)}
+                onClick={() =>
+                  window.open(process.env.PUBLIC_URL + item.link, "_blank")
+                }
               >
                 {item.name.split("\n").map((line, idx) => (
                   <tspan x={0} dy={idx === 0 ? 0 : 5} key={idx}>
@@ -193,7 +187,6 @@ const MapChart = () => {
             </Marker>
           ))}
         </ZoomableGroup>
-        <CustomModal show={modalShow} onHide={close} content={content} />
       </ComposableMap>
     </div>
   );
